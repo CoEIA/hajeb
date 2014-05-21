@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdminEnablerWidget</class>
+ <widget class="QWidget" name="AdminEnablerWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>303</width>
+    <height>205</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Administrator Account Manager</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0" colspan="2">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>التحكم بحساب مدير النظام</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="enableAdminButton">
+        <property name="text">
+         <string>تفعيل الحساب</string>
+        </property>
+        <property name="icon">
+         <iconset resource="CoEIAAdminEnabler.qrc">
+          <normaloff>:/images/ok.png</normaloff>:/images/ok.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="disableAdminButton">
+        <property name="text">
+         <string>تعطيل الحساب</string>
+        </property>
+        <property name="icon">
+         <iconset resource="CoEIAAdminEnabler.qrc">
+          <normaloff>:/images/cancel.png</normaloff>:/images/cancel.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>حساب مدير النظام في نظام التشغيل ويندوز فيستا وما فوق معطل بشكل تلقائي ، لذا يجب تفعيله واستخدامه لتنصيب برنامج حاجب</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+     <property name="margin">
+      <number>2</number>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QPushButton" name="exitButton">
+     <property name="text">
+      <string>خروج</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>99</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="CoEIAAdminEnabler.qrc"/>
+ </resources>
+ <connections/>
+</ui>

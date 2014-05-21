@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CustomMessageSender", "CustomMessageSender\CustomMessageSender.vcproj", "{442A974F-B22F-477E-8085-51F120AB4D6C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{442A974F-B22F-477E-8085-51F120AB4D6C}.Debug|Win32.ActiveCfg = Release|Win32
+		{442A974F-B22F-477E-8085-51F120AB4D6C}.Debug|Win32.Build.0 = Release|Win32
+		{442A974F-B22F-477E-8085-51F120AB4D6C}.Release|Win32.ActiveCfg = Release|Win32
+		{442A974F-B22F-477E-8085-51F120AB4D6C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

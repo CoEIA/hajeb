@@ -1,0 +1,11 @@
+Sqlite:
+download header file from source code and add it to INCLUDE in VS.
+
+download the dll file \sqlite-dll-win32-x86-3070400
+and convert the sqlite3.def to lib:
+
+run: /path/to/vc/bin/vcvars32
+then run:
+lib /machine:i386 /def:sqlite3.def
+
+

@@ -1,0 +1,40 @@
+//    HWND handle = GetForegroundWindow();
+//    DWORD threadId = GetWindowThreadProcessId(handle,0);
+//    LPTSTR buffer =  new TCHAR[256];
+////    HANDLE hProcess = OpenProcess(0x0410, false, threadId);
+//    GetModuleFileNameEx(handle,NULL,buffer,256);
+
+//    QString pName = QString::fromWCharArray(buffer);
+//    qDebug() << pName;
+
+//    qDebug() << "timeout";
+
+
+
+##########################
+
+//    qDebug() << "screenshot timout";
+//    PROCESSENTRY32 entry;
+//    entry.dwFlags = sizeof( PROCESSENTRY32 );
+//    HANDLE snapshot = CreateToolhelp32Snapshot( TH32CS_SNAPPROCESS, NULL );
+//    if ( Process32First( snapshot, &entry ) == TRUE ) {
+//        qDebug() << "true";
+//        while ( Process32Next( snapshot, &entry ) == TRUE ) {
+//            qDebug() << "cmp";
+//            if ( _wcsicmp ( entry.szExeFile, L"chrome.exe" ) == 0 ) {
+//                HANDLE hProcess = OpenProcess( PROCESS_QUERY_INFORMATION | PROCESS_VM_READ | PROCESS_TERMINATE, FALSE, entry.th32ProcessID );
+//                QPixmap screenshot = QPixmap::grabWindow((HWND__*)hProcess);
+//                bool isSaved = screenshot.save("C:\\PCS\\screenshot\\" + QDateTime::currentDateTime().toString() + ".png");
+//                if (!isSaved)
+//                    qDebug() << "Can not save screenshot";
+//                else
+//                    qDebug() << "Screenshot saved.";
+//                CloseHandle( hProcess );
+//            } else {
+//                qDebug() << "No";
+//            }
+//        }
+//    } else
+//        qDebug() << "false";
+
+//    CloseHandle( snapshot );

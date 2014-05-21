@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT type="Advanced Installer" CreateVersion="6.8" version="6.8" modules="professional" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_FINDEXE_TITLE" Value="Select the installation package for [|ProductName]" ValueLocId="AI.Property.FindExeTitle"/>
+    <ROW Property="ALLUSERS" Value="2"/>
+    <ROW Property="ARPCOMMENTS" Value="CoEIA [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPCONTACT" Value="Ahmed Isam"/>
+    <ROW Property="ARPHELPLINK" Value="http://coeia.edu.sa"/>
+    <ROW Property="ARPPRODUCTICON" Value="hajibIcon.exe" Type="8"/>
+    <ROW Property="ARPURLINFOABOUT" Value="http://coeia.edu.sa"/>
+    <ROW Property="BannerBitmap" MultiBuildValue="DefaultBuild:default_banner.bmp" Type="1"/>
+    <ROW Property="CTRLS" Value="3"/>
+    <ROW Property="DialogBitmap" MultiBuildValue="DefaultBuild:default_dialog.bmp" Type="1"/>
+    <ROW Property="Manufacturer" Value="CoEIA" ValueLocId="*"/>
+    <ROW Property="ProductCode" Value="1033:{3EBB456F-3618-4575-AFFD-6520AA355629} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Hajeb" ValueLocId="*"/>
+    <ROW Property="ProductVersion" Value="1.0.0"/>
+    <ROW Property="RUNAPPLICATION" Value="1" Type="4"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
+    <ROW Property="UpgradeCode" Value="{753C44B9-A6C8-4538-95DE-1F54B452E38D}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="Deskto~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="bin_DIR" Directory_Parent="APPDIR" DefaultDir="bin"/>
+    <ROW Directory="sqldrivers_DIR" Directory_Parent="bin_DIR" DefaultDir="sqldri~1|sqldrivers"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AI_ExePath" ComponentId="{4A831EEB-938A-43BA-B2FE-E308B7874CD7}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
+    <ROW Component="CoEIAAdminManager.exe" ComponentId="{8DF75E16-3EB3-4C84-8CE9-FDA12820CF63}" Directory_="bin_DIR" Attributes="0" KeyPath="CoEIAAdminManager.exe"/>
+    <ROW Component="CoEIAHajebUninstall.exe" ComponentId="{A54297F6-0F34-44F3-954E-97E1E48AF09A}" Directory_="bin_DIR" Attributes="0" KeyPath="CoEIAHajebUninstall.exe"/>
+    <ROW Component="CoEIAHajebUninstall.exe.manifest" ComponentId="{B1433F38-CF75-4D94-8481-92965595D756}" Directory_="bin_DIR" Attributes="0" KeyPath="CoEIAHajebUninstall.exe.manifest" Type="0"/>
+    <ROW Component="CoEIAHajebUpdater.exe" ComponentId="{C6A15E2D-D2FD-40A4-AE0B-5C52D02F1065}" Directory_="bin_DIR" Attributes="0" KeyPath="CoEIAHajebUpdater.exe"/>
+    <ROW Component="CoEIAKeyMonitor.exe" ComponentId="{EE84A7B1-FC4F-4406-A60D-073D369168C2}" Directory_="bin_DIR" Attributes="0" KeyPath="CoEIAKeyMonitor.exe"/>
+    <ROW Component="CoEIANetMonitor.exe" ComponentId="{B315D204-8B30-4FB3-8B73-0125BEC0250E}" Directory_="bin_DIR" Attributes="0" KeyPath="CoEIANetMonitor.exe"/>
+    <ROW Component="CoEIAProcessMonitor.exe" ComponentId="{F028D7A5-F503-42D0-A868-D604FA2E5F7E}" Directory_="bin_DIR" Attributes="0" KeyPath="CoEIAProcessMonitor.exe"/>
+    <ROW Component="CoEIAScreenshotMonitor.exe" ComponentId="{E1A653B1-DC6D-411C-AA9E-0A1717C26E88}" Directory_="bin_DIR" Attributes="0" KeyPath="CoEIAScreenshotMonitor.exe"/>
+    <ROW Component="CoEIAUserNameMonitor.exe" ComponentId="{87AB47DB-8061-4D08-8221-D1F38C3ABF2B}" Directory_="bin_DIR" Attributes="0" KeyPath="CoEIAUserNameMonitor.exe"/>
+    <ROW Component="CoEIAUserNameWin7.exe" ComponentId="{D33C2632-96F6-489C-A26E-F3AF24CCFB9D}" Directory_="bin_DIR" Attributes="0" KeyPath="CoEIAUserNameWin7.exe"/>
+    <ROW Component="CustomMessageSender.exe" ComponentId="{618B2005-6458-46EC-BB65-8CF1F2B0519F}" Directory_="bin_DIR" Attributes="0" KeyPath="CustomMessageSender.exe"/>
+    <ROW Component="Hajeb.exe" ComponentId="{BEDC1399-32AD-4918-92D3-C957D650F059}" Directory_="bin_DIR" Attributes="0" KeyPath="Hajeb.exe"/>
+    <ROW Component="HajebRemover.exe" ComponentId="{C58A01C2-6C5D-4D3E-85DB-70F1D857475B}" Directory_="bin_DIR" Attributes="0" KeyPath="HajebRemover.exe"/>
+    <ROW Component="NonIFSLSP.dll" ComponentId="{151FD147-C0AA-49CA-AC8E-00262B018D82}" Directory_="bin_DIR" Attributes="0" KeyPath="NonIFSLSP.dll"/>
+    <ROW Component="QtCore4.dll" ComponentId="{DD3F9D31-0C88-40BB-8340-B584CACFCA74}" Directory_="bin_DIR" Attributes="0" KeyPath="QtCore4.dll"/>
+    <ROW Component="QtGui4.dll" ComponentId="{F12145D9-10C0-426D-B41E-C6D7EA75E223}" Directory_="bin_DIR" Attributes="0" KeyPath="QtGui4.dll"/>
+    <ROW Component="QtNetwork4.dll" ComponentId="{F63759F0-EB1E-476A-9D6C-735E2036DDFF}" Directory_="bin_DIR" Attributes="0" KeyPath="QtNetwork4.dll"/>
+    <ROW Component="QtSql4.dll" ComponentId="{75D88DBD-E63C-4A60-8E03-3AEC58E72291}" Directory_="bin_DIR" Attributes="0" KeyPath="QtSql4.dll"/>
+    <ROW Component="RegisterLSP.exe" ComponentId="{182B617C-97EE-4BF3-9051-E10DC33FD207}" Directory_="bin_DIR" Attributes="0" KeyPath="RegisterLSP.exe"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{E145406F-7A04-4863-869B-DA83F081579D}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="Service1.exe" ComponentId="{8CF1499E-F2FE-4BFD-AB32-8F26970C0DA1}" Directory_="bin_DIR" Attributes="0" KeyPath="Service1.exe"/>
+    <ROW Component="XYNTService.exe" ComponentId="{896E7DBD-99D3-4EA4-8B68-C142950392A1}" Directory_="bin_DIR" Attributes="0" KeyPath="XYNTService.exe"/>
+    <ROW Component="hajeb.PNG" ComponentId="{297B5625-448A-4E13-AA70-20FFD36DB0C8}" Directory_="APPDIR" Attributes="0" KeyPath="hajeb.PNG" Type="0"/>
+    <ROW Component="libeay32.dll" ComponentId="{9B3997FB-9424-4495-8F5E-1533F0D699B8}" Directory_="bin_DIR" Attributes="0" KeyPath="libeay32.dll"/>
+    <ROW Component="libgcc_s_dw2_1.dll" ComponentId="{044D5747-AD9F-4C8F-83AF-2982EB07DB7F}" Directory_="bin_DIR" Attributes="0" KeyPath="libgcc_s_dw2_1.dll"/>
+    <ROW Component="libiconv2.dll" ComponentId="{893A3534-1AD1-4803-B61E-4CA8E0A1D76F}" Directory_="bin_DIR" Attributes="0" KeyPath="libiconv2.dll"/>
+    <ROW Component="libintl3.dll" ComponentId="{4CD2AF59-6100-4453-BDE6-2C060CE83D9B}" Directory_="bin_DIR" Attributes="0" KeyPath="libintl3.dll"/>
+    <ROW Component="libssl32.dll" ComponentId="{A32D1040-EAB8-43B9-AE83-A0FBB54F3AEB}" Directory_="bin_DIR" Attributes="0" KeyPath="libssl32.dll"/>
+    <ROW Component="mfc100.dll" ComponentId="{34B67C06-84BC-4A83-83EE-0316DE8D6D4D}" Directory_="bin_DIR" Attributes="0" KeyPath="mfc100.dll"/>
+    <ROW Component="mingwm10.dll" ComponentId="{8C0BDB4F-8703-43C5-8973-D80A5B3A2FE4}" Directory_="bin_DIR" Attributes="0" KeyPath="mingwm10.dll"/>
+    <ROW Component="msvcp100.dll" ComponentId="{16F93163-8F28-446F-837C-FB12679D2C4F}" Directory_="bin_DIR" Attributes="0" KeyPath="msvcp100.dll"/>
+    <ROW Component="msvcr100.dll" ComponentId="{A7250228-76EE-44B0-A7E0-4E2AB2AF9EBF}" Directory_="bin_DIR" Attributes="0" KeyPath="msvcr100.dll"/>
+    <ROW Component="qsqlite4.dll" ComponentId="{66CEEE71-3DC3-400C-A651-92A73B9F2143}" Directory_="sqldrivers_DIR" Attributes="0" KeyPath="qsqlite4.dll"/>
+    <ROW Component="shm_reader.exe" ComponentId="{A240CAD3-06CA-456B-99C0-5D9CF109268B}" Directory_="bin_DIR" Attributes="0" KeyPath="shm_reader.exe"/>
+    <ROW Component="shm_server.exe" ComponentId="{FC569A85-2D75-4864-A7F2-B82CD32F1D18}" Directory_="bin_DIR" Attributes="0" KeyPath="shm_server.exe"/>
+    <ROW Component="sporder.dll" ComponentId="{BAAFC01D-A076-48E3-BB9F-709FF2CD0969}" Directory_="bin_DIR" Attributes="0" KeyPath="sporder.dll"/>
+    <ROW Component="sqlite3.dll" ComponentId="{84E71A04-AAA9-49A4-A755-6879A185A739}" Directory_="bin_DIR" Attributes="0" KeyPath="sqlite3.dll"/>
+    <ROW Component="wget.exe" ComponentId="{4F8BE08E-A3CE-4CE3-B3F3-2561C690847B}" Directory_="bin_DIR" Attributes="0" KeyPath="wget.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="CoEIAAdminManager.exe CoEIAHajebUninstall.exe CoEIAHajebUninstall.exe.manifest CoEIAHajebUpdater.exe CoEIAKeyMonitor.exe CoEIANetMonitor.exe CoEIAProcessMonitor.exe CoEIAScreenshotMonitor.exe CoEIAUserNameMonitor.exe CoEIAUserNameWin7.exe CustomMessageSender.exe Hajeb.exe HajebRemover.exe libeay32.dll libgcc_s_dw2_1.dll libiconv2.dll libintl3.dll libssl32.dll mfc100.dll mingwm10.dll msvcp100.dll msvcr100.dll NonIFSLSP.dll QtCore4.dll QtGui4.dll QtNetwork4.dll QtSql4.dll RegisterLSP.exe Service1.exe shm_reader.exe shm_server.exe sporder.dll qsqlite4.dll sqlite3.dll wget.exe XYNTService.exe hajeb.PNG SHORTCUTDIR AI_ExePath"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="CoEIAAdminManager.exe" Component_="CoEIAAdminManager.exe" FileName="CoEIAA~1.exe|CoEIAAdminManager.exe" Attributes="0" SourcePath="..\build\bin\CoEIAAdminManager.exe" SelfReg="false" Sequence="1"/>
+    <ROW File="CoEIAHajebUninstall.exe" Component_="CoEIAHajebUninstall.exe" FileName="CoEIAH~1.exe|CoEIAHajebUninstall.exe" Attributes="0" SourcePath="..\build\bin\CoEIAHajebUninstall.exe" SelfReg="false" Sequence="2"/>
+    <ROW File="CoEIAHajebUninstall.exe.manifest" Component_="CoEIAHajebUninstall.exe.manifest" FileName="CoEIAH~1.man|CoEIAHajebUninstall.exe.manifest" Attributes="0" SourcePath="..\build\bin\CoEIAHajebUninstall.exe.manifest" SelfReg="false" Sequence="3"/>
+    <ROW File="CoEIAHajebUpdater.exe" Component_="CoEIAHajebUpdater.exe" FileName="CoEIAH~2.exe|CoEIAHajebUpdater.exe" Attributes="0" SourcePath="..\build\bin\CoEIAHajebUpdater.exe" SelfReg="false" Sequence="4"/>
+    <ROW File="CoEIAKeyMonitor.exe" Component_="CoEIAKeyMonitor.exe" FileName="CoEIAK~1.exe|CoEIAKeyMonitor.exe" Attributes="0" SourcePath="..\build\bin\CoEIAKeyMonitor.exe" SelfReg="false" Sequence="5"/>
+    <ROW File="CoEIANetMonitor.exe" Component_="CoEIANetMonitor.exe" FileName="CoEIAN~1.exe|CoEIANetMonitor.exe" Attributes="0" SourcePath="..\build\bin\CoEIANetMonitor.exe" SelfReg="false" Sequence="6"/>
+    <ROW File="CoEIAProcessMonitor.exe" Component_="CoEIAProcessMonitor.exe" FileName="CoEIAP~1.exe|CoEIAProcessMonitor.exe" Attributes="0" SourcePath="..\build\bin\CoEIAProcessMonitor.exe" SelfReg="false" Sequence="7"/>
+    <ROW File="CoEIAScreenshotMonitor.exe" Component_="CoEIAScreenshotMonitor.exe" FileName="CoEIAS~1.exe|CoEIAScreenshotMonitor.exe" Attributes="0" SourcePath="..\build\bin\CoEIAScreenshotMonitor.exe" SelfReg="false" Sequence="8"/>
+    <ROW File="CoEIAUserNameMonitor.exe" Component_="CoEIAUserNameMonitor.exe" FileName="CoEIAU~1.exe|CoEIAUserNameMonitor.exe" Attributes="0" SourcePath="..\build\bin\CoEIAUserNameMonitor.exe" SelfReg="false" Sequence="9"/>
+    <ROW File="CoEIAUserNameWin7.exe" Component_="CoEIAUserNameWin7.exe" FileName="CoEIAU~2.exe|CoEIAUserNameWin7.exe" Attributes="0" SourcePath="..\build\bin\CoEIAUserNameWin7.exe" SelfReg="false" Sequence="10"/>
+    <ROW File="CustomMessageSender.exe" Component_="CustomMessageSender.exe" FileName="Custom~1.exe|CustomMessageSender.exe" Attributes="0" SourcePath="..\build\bin\CustomMessageSender.exe" SelfReg="false" Sequence="11"/>
+    <ROW File="Hajeb.exe" Component_="Hajeb.exe" FileName="Hajeb.exe" Attributes="0" SourcePath="..\build\bin\Hajeb.exe" SelfReg="false" Sequence="12"/>
+    <ROW File="Hajeb.exe.manifest" Component_="CoEIAHajebUninstall.exe.manifest" FileName="Hajebe~1.man|Hajeb.exe.manifest" Attributes="0" SourcePath="..\build\bin\Hajeb.exe.manifest" SelfReg="false" Sequence="13"/>
+    <ROW File="HajebRemover.exe" Component_="HajebRemover.exe" FileName="HajebR~1.exe|HajebRemover.exe" Attributes="0" SourcePath="..\build\bin\HajebRemover.exe" SelfReg="false" Sequence="14"/>
+    <ROW File="HajebRemover.exe.manifest" Component_="CoEIAHajebUninstall.exe.manifest" FileName="HajebR~1.man|HajebRemover.exe.manifest" Attributes="0" SourcePath="..\build\bin\HajebRemover.exe.manifest" SelfReg="false" Sequence="15"/>
+    <ROW File="Install_LSP.bat" Component_="CoEIAHajebUninstall.exe.manifest" FileName="Instal~1.bat|Install LSP.bat" Attributes="0" SourcePath="..\build\bin\Install LSP.bat" SelfReg="false" Sequence="16"/>
+    <ROW File="Install_Services.bat" Component_="CoEIAHajebUninstall.exe.manifest" FileName="Instal~2.bat|Install Services.bat" Attributes="0" SourcePath="..\build\bin\Install Services.bat" SelfReg="false" Sequence="17"/>
+    <ROW File="NonIFSLSP.dll" Component_="NonIFSLSP.dll" FileName="NonIFS~1.dll|NonIFSLSP.dll" Attributes="0" SourcePath="..\build\bin\NonIFSLSP.dll" SelfReg="false" Sequence="27"/>
+    <ROW File="QtCore4.dll" Component_="QtCore4.dll" FileName="QtCore4.dll" Attributes="0" SourcePath="..\build\bin\QtCore4.dll" SelfReg="false" Sequence="28"/>
+    <ROW File="QtGui4.dll" Component_="QtGui4.dll" FileName="QtGui4.dll" Attributes="0" SourcePath="..\build\bin\QtGui4.dll" SelfReg="false" Sequence="29"/>
+    <ROW File="QtNetwork4.dll" Component_="QtNetwork4.dll" FileName="QtNetw~1.dll|QtNetwork4.dll" Attributes="0" SourcePath="..\build\bin\QtNetwork4.dll" SelfReg="false" Sequence="30"/>
+    <ROW File="QtSql4.dll" Component_="QtSql4.dll" FileName="QtSql4.dll" Attributes="0" SourcePath="..\build\bin\QtSql4.dll" SelfReg="false" Sequence="31"/>
+    <ROW File="ReadMe.txt" Component_="hajeb.PNG" FileName="ReadMe.txt" Attributes="0" SourcePath="..\build\ReadMe.txt" SelfReg="false" Sequence="47"/>
+    <ROW File="RegisterLSP.exe" Component_="RegisterLSP.exe" FileName="Regist~1.exe|RegisterLSP.exe" Attributes="0" SourcePath="..\build\bin\RegisterLSP.exe" SelfReg="false" Sequence="32"/>
+    <ROW File="Service1.exe" Component_="Service1.exe" FileName="Service1.exe" Attributes="0" SourcePath="..\build\bin\Service1.exe" SelfReg="false" Sequence="33"/>
+    <ROW File="Start_Services.bat" Component_="CoEIAHajebUninstall.exe.manifest" FileName="StartS~1.bat|Start Services.bat" Attributes="0" SourcePath="..\build\bin\Start Services.bat" SelfReg="false" Sequence="39"/>
+    <ROW File="Stop_Services.bat" Component_="CoEIAHajebUninstall.exe.manifest" FileName="StopSe~1.bat|Stop Services.bat" Attributes="0" SourcePath="..\build\bin\Stop Services.bat" SelfReg="false" Sequence="40"/>
+    <ROW File="Uninstall_Services.bat" Component_="CoEIAHajebUninstall.exe.manifest" FileName="Uninst~1.bat|Uninstall Services.bat" Attributes="0" SourcePath="..\build\bin\Uninstall Services.bat" SelfReg="false" Sequence="41"/>
+    <ROW File="XYNTService.exe" Component_="XYNTService.exe" FileName="XYNTSe~1.exe|XYNTService.exe" Attributes="0" SourcePath="..\build\bin\XYNTService.exe" SelfReg="false" Sequence="44"/>
+    <ROW File="XYNTService.ini" Component_="CoEIAHajebUninstall.exe.manifest" FileName="XYNTSe~1.ini|XYNTService.ini" Attributes="0" SourcePath="..\build\bin\XYNTService.ini" SelfReg="false" Sequence="45"/>
+    <ROW File="hajeb.PNG" Component_="hajeb.PNG" FileName="hajeb.PNG" Attributes="0" SourcePath="..\build\hajeb.PNG" SelfReg="false" Sequence="46"/>
+    <ROW File="libeay32.dll" Component_="libeay32.dll" FileName="libeay32.dll" Attributes="0" SourcePath="..\build\bin\libeay32.dll" SelfReg="false" Sequence="18"/>
+    <ROW File="libgcc_s_dw2_1.dll" Component_="libgcc_s_dw2_1.dll" FileName="libgcc~1.dll|libgcc_s_dw2-1.dll" Attributes="0" SourcePath="..\build\bin\libgcc_s_dw2-1.dll" SelfReg="false" Sequence="19"/>
+    <ROW File="libiconv2.dll" Component_="libiconv2.dll" FileName="libico~1.dll|libiconv2.dll" Attributes="0" SourcePath="..\build\bin\libiconv2.dll" SelfReg="false" Sequence="20"/>
+    <ROW File="libintl3.dll" Component_="libintl3.dll" FileName="libintl3.dll" Attributes="0" SourcePath="..\build\bin\libintl3.dll" SelfReg="false" Sequence="21"/>
+    <ROW File="libssl32.dll" Component_="libssl32.dll" FileName="libssl32.dll" Attributes="0" SourcePath="..\build\bin\libssl32.dll" SelfReg="false" Sequence="22"/>
+    <ROW File="mfc100.dll" Component_="mfc100.dll" FileName="mfc100.dll" Attributes="0" SourcePath="..\build\bin\mfc100.dll" SelfReg="false" Sequence="23"/>
+    <ROW File="mingwm10.dll" Component_="mingwm10.dll" FileName="mingwm10.dll" Attributes="0" SourcePath="..\build\bin\mingwm10.dll" SelfReg="false" Sequence="24"/>
+    <ROW File="msvcp100.dll" Component_="msvcp100.dll" FileName="msvcp100.dll" Attributes="0" SourcePath="..\build\bin\msvcp100.dll" SelfReg="false" Sequence="25"/>
+    <ROW File="msvcr100.dll" Component_="msvcr100.dll" FileName="msvcr100.dll" Attributes="0" SourcePath="..\build\bin\msvcr100.dll" SelfReg="false" Sequence="26"/>
+    <ROW File="qsqlite4.dll" Component_="qsqlite4.dll" FileName="qsqlite4.dll" Attributes="0" SourcePath="..\build\bin\sqldrivers\qsqlite4.dll" SelfReg="false" Sequence="37"/>
+    <ROW File="shm_reader.exe" Component_="shm_reader.exe" FileName="shm_re~1.exe|shm_reader.exe" Attributes="0" SourcePath="..\build\bin\shm_reader.exe" SelfReg="false" Sequence="34"/>
+    <ROW File="shm_server.exe" Component_="shm_server.exe" FileName="shm_se~1.exe|shm_server.exe" Attributes="0" SourcePath="..\build\bin\shm_server.exe" SelfReg="false" Sequence="35"/>
+    <ROW File="sporder.dll" Component_="sporder.dll" FileName="sporder.dll" Attributes="0" SourcePath="..\build\bin\sporder.dll" SelfReg="false" Sequence="36"/>
+    <ROW File="sqlite3.dll" Component_="sqlite3.dll" FileName="sqlite3.dll" Attributes="0" SourcePath="..\build\bin\sqlite3.dll" SelfReg="false" Sequence="38"/>
+    <ROW File="version.txt" Component_="CoEIAHajebUninstall.exe.manifest" FileName="version.txt" Attributes="0" SourcePath="..\build\bin\version.txt" SelfReg="false" Sequence="42"/>
+    <ROW File="wget.exe" Component_="wget.exe" FileName="wget.exe" Attributes="0" SourcePath="..\build\bin\wget.exe" SelfReg="false" Sequence="43"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4" CabsLocation="1" PackageType="1" FilesInsideExe="true" ExeIconPath="..\..\..\..\..\Documents and Settings\Administrator\Desktop\CoEIA Hajeb\CoEIAHajeb\hajibIcon.ico" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\install" ExeName="setup"/>
+    <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_FRAGS&gt;FolderDlg.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_FRAGS&gt;UI.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_DeleteLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_DeleteRLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractLzma" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_CU" Builds="DefaultBuild"/>
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_LM" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="default_banner.bmp" SourcePath="&lt;AI_RES&gt;default-banner.bmp"/>
+    <ROW Name="default_dialog.bmp" SourcePath="&lt;AI_RES&gt;default-dialog.bmp"/>
+    <ROW Name="lzmaextractor.dll" SourcePath="&lt;AI_CUSTACTS&gt;lzmaextractor.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ATTRIBUTE name="FixedSizeBitmaps" value="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="3"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="2"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DeleteCadLzma" Type="51" Source="&lt;AI_CUSTACTS&gt;lzmaextractor.dll" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteLzma" Type="1025" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DeleteRCadLzma" Type="51" Source="AI_DeleteRLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteRLzma" Type="1281" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_ExtractCadLzma" Type="51" Source="AI_ExtractLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_ExtractLzma" Type="1025" Source="lzmaextractor.dll" Target="ExtractLZMAFiles"/>
+    <ROW Action="AI_FindExeLzma" Type="1" Source="lzmaextractor.dll" Target="FindEXE"/>
+    <ROW Action="AI_LaunchApp" Type="1" Source="aicustact.dll" Target="[#Hajeb.exe]"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="AI_ViewReadme" Type="1" Source="aicustact.dll" Target="[#ReadMe.txt]"/>
+    <ROW Action="HajebRemover.exe" Type="1042" Source="HajebRemover.exe"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[ProgramFilesFolder][ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="hajibIcon.exe" SourcePath="..\..\..\..\..\Documents and Settings\Administrator\Desktop\CoEIA Hajeb\CoEIAHajeb\hajibIcon.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="Not Installed" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_DeleteCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="199" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="198" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="197" Builds="DefaultBuild"/>
+    <ROW Action="AI_FindExeLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="196" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="1549" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="1548" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="6599" Builds="DefaultBuild"/>
+    <ROW Action="HajebRemover.exe" Condition="REMOVE=&quot;ALL&quot;" Sequence="1651"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_EXE_PATH_CU" Root="1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+    <ROW Signature_="AI_EXE_PATH_LM" Root="2" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="AI_ExePath" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Value="[AI_SETUPEXEPATH]" Component_="AI_ExePath"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="Hajeb.exe" Directory_="SHORTCUTDIR" Name="Hajeb.exe" Component_="Hajeb.exe" Target="[#Hajeb.exe]" Description="Hajeb.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="bin_DIR"/>
+    <ROW Shortcut="Hajeb.exe_1" Directory_="DesktopFolder" Name="Hajeb.exe" Component_="Hajeb.exe" Target="[#Hajeb.exe]" Description="Hajeb.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="bin_DIR"/>
+    <ROW Shortcut="HajebRemover.exe" Directory_="SHORTCUTDIR" Name="HajebR~1.exe|HajebRemover.exe" Component_="HajebRemover.exe" Target="[#HajebRemover.exe]" Description="HajebRemover.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="bin_DIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMax="[|ProductVersion]" Attributes="1025" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SynchronizedFolderComponent">
+    <ROW Directory_="APPDIR" SourcePath="..\build" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6"/>
+  </COMPONENT>
+</DOCUMENT>

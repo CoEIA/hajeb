@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginDialog</class>
+ <widget class="QDialog" name="LoginDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>416</width>
+    <height>210</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>أدخل كلمة المرور</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="CoEIAHajeb.qrc">
+    <normaloff>:/images/hajibIcon.ico</normaloff>:/images/hajibIcon.ico</iconset>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="CoEIAHajeb.qrc">:/images/header.PNG</pixmap>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>كلمة مرور نظام حاجب</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="passwordLineEdit">
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>208</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="loginButton">
+       <property name="text">
+        <string>دخول النظام</string>
+       </property>
+       <property name="icon">
+        <iconset resource="CoEIAHajeb.qrc">
+         <normaloff>:/images/login.png</normaloff>:/images/login.png</iconset>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="quitButton">
+       <property name="text">
+        <string>خروج</string>
+       </property>
+       <property name="icon">
+        <iconset resource="CoEIAHajeb.qrc">
+         <normaloff>:/images/cancel.png</normaloff>:/images/cancel.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="CoEIAHajeb.qrc"/>
+ </resources>
+ <connections/>
+</ui>

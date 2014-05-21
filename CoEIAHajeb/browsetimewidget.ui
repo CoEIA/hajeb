@@ -1,0 +1,2311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BrowseTimeWidget</class>
+ <widget class="QWidget" name="BrowseTimeWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>783</width>
+    <height>532</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_5">
+   <item row="0" column="1" rowspan="2" colspan="2">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title">
+      <string>خيارات</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <item row="0" column="5">
+       <widget class="QPushButton" name="saveButton">
+        <property name="text">
+         <string>حفظ الإعدادات</string>
+        </property>
+        <property name="icon">
+         <iconset resource="CoEIAHajeb.qrc">
+          <normaloff>:/images/save.png</normaloff>:/images/save.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QPushButton" name="enableAllButton">
+        <property name="text">
+         <string>تفعيل الكل</string>
+        </property>
+        <property name="icon">
+         <iconset resource="CoEIAHajeb.qrc">
+          <normaloff>:/images/ok.png</normaloff>:/images/ok.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="disableAllButton">
+        <property name="text">
+         <string>تعطيل الكل</string>
+        </property>
+        <property name="icon">
+         <iconset resource="CoEIAHajeb.qrc">
+          <normaloff>:/images/cancel.png</normaloff>:/images/cancel.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <spacer name="horizontalSpacer_16">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="userNameComboBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>اسم المستخدم</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="4">
+    <layout class="QHBoxLayout" name="horizontalLayout_11">
+     <item>
+      <spacer name="horizontalSpacer_17">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>228</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="timesTableRadioButton">
+       <property name="toolTip">
+        <string>استخدام جدول الأيام لتحديد الساعات التي يمكن استخدام الانترنت فيها الساعات التي لا يمكن فيها استخدام الإنترنت.</string>
+       </property>
+       <property name="text">
+        <string>استخدام جدول الأوقات</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_19">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>18</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="timesCounterRadioButton">
+       <property name="toolTip">
+        <string>استخدام عداد وقت لتحديد عدد الساعات المسموح فيها باستخدام الإنترنت خلال اليوم المطلوب.</string>
+       </property>
+       <property name="text">
+        <string>استخدام عداد الوقت</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_18">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>228</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="4" column="0">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>0</width>
+       <height>184</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="4" column="3">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>0</width>
+       <height>184</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="5" column="1" colspan="2">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>80</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="6" column="1" colspan="2">
+    <layout class="QHBoxLayout" name="horizontalLayout_10">
+     <item>
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>237</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QFormLayout" name="formLayout">
+       <property name="formAlignment">
+        <set>Qt::AlignHCenter|Qt::AlignTop</set>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="enableHourLabel">
+         <property name="text">
+          <string>ساعة مفعلة</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QToolButton" name="enableToolButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="disableHourLabel">
+         <property name="text">
+          <string>ساعة معطلة</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QToolButton" name="disableToolButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>237</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="7" column="2">
+    <spacer name="verticalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>88</width>
+       <height>4</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="4" column="1" colspan="2">
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="timesGroupBox">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <property name="leftMargin">
+           <number>2</number>
+          </property>
+          <property name="topMargin">
+           <number>9</number>
+          </property>
+          <property name="rightMargin">
+           <number>1</number>
+          </property>
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>السبت </string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QToolButton" name="button_1_0">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QToolButton" name="button_1_1">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QToolButton" name="button_1_2">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="4">
+           <widget class="QToolButton" name="button_1_3">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="5">
+           <widget class="QToolButton" name="button_1_4">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="6">
+           <widget class="QToolButton" name="button_1_5">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="7">
+           <widget class="QToolButton" name="button_1_6">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="8">
+           <widget class="QToolButton" name="button_1_7">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="9">
+           <widget class="QToolButton" name="button_1_8">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="10">
+           <widget class="QToolButton" name="button_1_9">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="11">
+           <widget class="QToolButton" name="button_1_10">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="12">
+           <widget class="QToolButton" name="button_1_11">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="13">
+           <widget class="QToolButton" name="button_1_12">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="14">
+           <widget class="QToolButton" name="button_1_13">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="15">
+           <widget class="QToolButton" name="button_1_14">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="16">
+           <widget class="QToolButton" name="button_1_15">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="17">
+           <widget class="QToolButton" name="button_1_16">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="18">
+           <widget class="QToolButton" name="button_1_17">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="19">
+           <widget class="QToolButton" name="button_1_18">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="20">
+           <widget class="QToolButton" name="button_1_19">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="21">
+           <widget class="QToolButton" name="button_1_20">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="22">
+           <widget class="QToolButton" name="button_1_21">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="23">
+           <widget class="QToolButton" name="button_1_22">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="24">
+           <widget class="QToolButton" name="button_1_23">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>الأحد</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QToolButton" name="button_2_0">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QToolButton" name="button_2_1">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QToolButton" name="button_2_2">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="4">
+           <widget class="QToolButton" name="button_2_3">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="5">
+           <widget class="QToolButton" name="button_2_4">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="6">
+           <widget class="QToolButton" name="button_2_5">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="7">
+           <widget class="QToolButton" name="button_2_6">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="8">
+           <widget class="QToolButton" name="button_2_7">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="9">
+           <widget class="QToolButton" name="button_2_8">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="10">
+           <widget class="QToolButton" name="button_2_9">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="11">
+           <widget class="QToolButton" name="button_2_10">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="12">
+           <widget class="QToolButton" name="button_2_11">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="13">
+           <widget class="QToolButton" name="button_2_12">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="14">
+           <widget class="QToolButton" name="button_2_13">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="15">
+           <widget class="QToolButton" name="button_2_14">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="16">
+           <widget class="QToolButton" name="button_2_15">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="17">
+           <widget class="QToolButton" name="button_2_16">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="18">
+           <widget class="QToolButton" name="button_2_17">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="19">
+           <widget class="QToolButton" name="button_2_18">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="20">
+           <widget class="QToolButton" name="button_2_19">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="21">
+           <widget class="QToolButton" name="button_2_20">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="22">
+           <widget class="QToolButton" name="button_2_21">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="23">
+           <widget class="QToolButton" name="button_2_22">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="24">
+           <widget class="QToolButton" name="button_2_23">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>الأثنين</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QToolButton" name="button_3_0">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QToolButton" name="button_3_1">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="3">
+           <widget class="QToolButton" name="button_3_2">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="4">
+           <widget class="QToolButton" name="button_3_3">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="5">
+           <widget class="QToolButton" name="button_3_4">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="6">
+           <widget class="QToolButton" name="button_3_5">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="7">
+           <widget class="QToolButton" name="button_3_6">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="8">
+           <widget class="QToolButton" name="button_3_7">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="9">
+           <widget class="QToolButton" name="button_3_8">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="10">
+           <widget class="QToolButton" name="button_3_9">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="11">
+           <widget class="QToolButton" name="button_3_10">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="12">
+           <widget class="QToolButton" name="button_3_11">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="13">
+           <widget class="QToolButton" name="button_3_12">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="14">
+           <widget class="QToolButton" name="button_3_13">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="15">
+           <widget class="QToolButton" name="button_3_14">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="16">
+           <widget class="QToolButton" name="button_3_15">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="17">
+           <widget class="QToolButton" name="button_3_16">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="18">
+           <widget class="QToolButton" name="button_3_17">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="19">
+           <widget class="QToolButton" name="button_3_18">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="20">
+           <widget class="QToolButton" name="button_3_19">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="21">
+           <widget class="QToolButton" name="button_3_20">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="22">
+           <widget class="QToolButton" name="button_3_21">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="23">
+           <widget class="QToolButton" name="button_3_22">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="24">
+           <widget class="QToolButton" name="button_3_23">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>الثلاثاء</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QToolButton" name="button_4_0">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QToolButton" name="button_4_1">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="3">
+           <widget class="QToolButton" name="button_4_2">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="4">
+           <widget class="QToolButton" name="button_4_3">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="5">
+           <widget class="QToolButton" name="button_4_4">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="6">
+           <widget class="QToolButton" name="button_4_5">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="7">
+           <widget class="QToolButton" name="button_4_6">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="8">
+           <widget class="QToolButton" name="button_4_7">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="9">
+           <widget class="QToolButton" name="button_4_8">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="10">
+           <widget class="QToolButton" name="button_4_9">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="11">
+           <widget class="QToolButton" name="button_4_10">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="12">
+           <widget class="QToolButton" name="button_4_11">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="13">
+           <widget class="QToolButton" name="button_4_12">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="14">
+           <widget class="QToolButton" name="button_4_13">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="15">
+           <widget class="QToolButton" name="button_4_14">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="16">
+           <widget class="QToolButton" name="button_4_15">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="17">
+           <widget class="QToolButton" name="button_4_16">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="18">
+           <widget class="QToolButton" name="button_4_17">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="19">
+           <widget class="QToolButton" name="button_4_18">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="20">
+           <widget class="QToolButton" name="button_4_19">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="21">
+           <widget class="QToolButton" name="button_4_20">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="22">
+           <widget class="QToolButton" name="button_4_21">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="23">
+           <widget class="QToolButton" name="button_4_22">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="24">
+           <widget class="QToolButton" name="button_4_23">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>الأربعاء</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QToolButton" name="button_5_0">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="2">
+           <widget class="QToolButton" name="button_5_1">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="3">
+           <widget class="QToolButton" name="button_5_2">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="4">
+           <widget class="QToolButton" name="button_5_3">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="5">
+           <widget class="QToolButton" name="button_5_4">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="6">
+           <widget class="QToolButton" name="button_5_5">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="7">
+           <widget class="QToolButton" name="button_5_6">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="8">
+           <widget class="QToolButton" name="button_5_7">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="9">
+           <widget class="QToolButton" name="button_5_8">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="10">
+           <widget class="QToolButton" name="button_5_9">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="11">
+           <widget class="QToolButton" name="button_5_10">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="12">
+           <widget class="QToolButton" name="button_5_11">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="13">
+           <widget class="QToolButton" name="button_5_12">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="14">
+           <widget class="QToolButton" name="button_5_13">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="15">
+           <widget class="QToolButton" name="button_5_14">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="16">
+           <widget class="QToolButton" name="button_5_15">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="17">
+           <widget class="QToolButton" name="button_5_16">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="18">
+           <widget class="QToolButton" name="button_5_17">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="19">
+           <widget class="QToolButton" name="button_5_18">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="20">
+           <widget class="QToolButton" name="button_5_19">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="21">
+           <widget class="QToolButton" name="button_5_20">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="22">
+           <widget class="QToolButton" name="button_5_21">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="23">
+           <widget class="QToolButton" name="button_5_22">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="24">
+           <widget class="QToolButton" name="button_5_23">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="label_9">
+            <property name="text">
+             <string>الخميس</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QToolButton" name="button_6_0">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="2">
+           <widget class="QToolButton" name="button_6_1">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="3">
+           <widget class="QToolButton" name="button_6_2">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="4">
+           <widget class="QToolButton" name="button_6_3">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="5">
+           <widget class="QToolButton" name="button_6_4">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="6">
+           <widget class="QToolButton" name="button_6_5">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="7">
+           <widget class="QToolButton" name="button_6_6">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="8">
+           <widget class="QToolButton" name="button_6_7">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="9">
+           <widget class="QToolButton" name="button_6_8">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="10">
+           <widget class="QToolButton" name="button_6_9">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="11">
+           <widget class="QToolButton" name="button_6_10">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="12">
+           <widget class="QToolButton" name="button_6_11">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="13">
+           <widget class="QToolButton" name="button_6_12">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="14">
+           <widget class="QToolButton" name="button_6_13">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="15">
+           <widget class="QToolButton" name="button_6_14">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="16">
+           <widget class="QToolButton" name="button_6_15">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="17">
+           <widget class="QToolButton" name="button_6_16">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="18">
+           <widget class="QToolButton" name="button_6_17">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="19">
+           <widget class="QToolButton" name="button_6_18">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="20">
+           <widget class="QToolButton" name="button_6_19">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="21">
+           <widget class="QToolButton" name="button_6_20">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="22">
+           <widget class="QToolButton" name="button_6_21">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="23">
+           <widget class="QToolButton" name="button_6_22">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="24">
+           <widget class="QToolButton" name="button_6_23">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="label_10">
+            <property name="text">
+             <string>الجمعة</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="1">
+           <widget class="QToolButton" name="button_7_0">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="2">
+           <widget class="QToolButton" name="button_7_1">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="3">
+           <widget class="QToolButton" name="button_7_2">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="4">
+           <widget class="QToolButton" name="button_7_3">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="5">
+           <widget class="QToolButton" name="button_7_4">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="6">
+           <widget class="QToolButton" name="button_7_5">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="7">
+           <widget class="QToolButton" name="button_7_6">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="8">
+           <widget class="QToolButton" name="button_7_7">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="9">
+           <widget class="QToolButton" name="button_7_8">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="10">
+           <widget class="QToolButton" name="button_7_9">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="11">
+           <widget class="QToolButton" name="button_7_10">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="12">
+           <widget class="QToolButton" name="button_7_11">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="13">
+           <widget class="QToolButton" name="button_7_12">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="14">
+           <widget class="QToolButton" name="button_7_13">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="15">
+           <widget class="QToolButton" name="button_7_14">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="16">
+           <widget class="QToolButton" name="button_7_15">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="17">
+           <widget class="QToolButton" name="button_7_16">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="18">
+           <widget class="QToolButton" name="button_7_17">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="19">
+           <widget class="QToolButton" name="button_7_18">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="20">
+           <widget class="QToolButton" name="button_7_19">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="21">
+           <widget class="QToolButton" name="button_7_20">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="22">
+           <widget class="QToolButton" name="button_7_21">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="23">
+           <widget class="QToolButton" name="button_7_22">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="24">
+           <widget class="QToolButton" name="button_7_23">
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="24">
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>23:00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="23">
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>22:00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="22">
+           <widget class="QLabel" name="label_19">
+            <property name="text">
+             <string>21:00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="21">
+           <widget class="QLabel" name="label_20">
+            <property name="text">
+             <string>20:00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="20">
+           <widget class="QLabel" name="label_21">
+            <property name="text">
+             <string>19:00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="19">
+           <widget class="QLabel" name="label_22">
+            <property name="text">
+             <string>18:00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="18">
+           <widget class="QLabel" name="label_23">
+            <property name="text">
+             <string>17:00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="17">
+           <widget class="QLabel" name="label_24">
+            <property name="text">
+             <string>16:00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="16">
+           <widget class="QLabel" name="label_25">
+            <property name="text">
+             <string>15:00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="15">
+           <widget class="QLabel" name="label_26">
+            <property name="text">
+             <string>14:00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="14">
+           <widget class="QLabel" name="label_27">
+            <property name="text">
+             <string>13:00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="13">
+           <widget class="QLabel" name="label_28">
+            <property name="text">
+             <string>12:00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="12">
+           <widget class="QLabel" name="label_29">
+            <property name="text">
+             <string>11:00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="11">
+           <widget class="QLabel" name="label_30">
+            <property name="text">
+             <string>10:00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="10">
+           <widget class="QLabel" name="label_31">
+            <property name="text">
+             <string>09:00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="9">
+           <widget class="QLabel" name="label_32">
+            <property name="text">
+             <string>08:00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="8">
+           <widget class="QLabel" name="label_33">
+            <property name="text">
+             <string>07:00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="7">
+           <widget class="QLabel" name="label_34">
+            <property name="text">
+             <string>06:00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="6">
+           <widget class="QLabel" name="label_35">
+            <property name="text">
+             <string>05:00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="5">
+           <widget class="QLabel" name="label_36">
+            <property name="text">
+             <string>04:00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="4">
+           <widget class="QLabel" name="label_37">
+            <property name="text">
+             <string>03:00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QLabel" name="label_38">
+            <property name="text">
+             <string>02:00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="label_39">
+            <property name="text">
+             <string>01:00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_40">
+            <property name="text">
+             <string>00:00</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <spacer name="horizontalSpacer_14">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>181</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="timesCounterGroupBox">
+         <property name="title">
+          <string/>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QLabel" name="label_14">
+              <property name="text">
+               <string>السبت  </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_42">
+              <property name="text">
+               <string>عدد الساعات</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="day_h_1">
+              <property name="maximum">
+               <number>23</number>
+              </property>
+              <property name="value">
+               <number>23</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_43">
+              <property name="text">
+               <string>عدد الدقائق</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="day_m_1">
+              <property name="maximum">
+               <number>59</number>
+              </property>
+              <property name="value">
+               <number>59</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QLabel" name="label_15">
+              <property name="text">
+               <string>الأحد     </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_6">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_44">
+              <property name="text">
+               <string>عدد الساعات</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="day_h_2">
+              <property name="maximum">
+               <number>23</number>
+              </property>
+              <property name="value">
+               <number>23</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_45">
+              <property name="text">
+               <string>عدد الدقائق</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="day_m_2">
+              <property name="maximum">
+               <number>59</number>
+              </property>
+              <property name="value">
+               <number>59</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QLabel" name="label_18">
+              <property name="text">
+               <string>الأثنين   </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_9">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_50">
+              <property name="text">
+               <string>عدد الساعات</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="day_h_3">
+              <property name="maximum">
+               <number>23</number>
+              </property>
+              <property name="value">
+               <number>23</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_51">
+              <property name="text">
+               <string>عدد الدقائق</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="day_m_3">
+              <property name="maximum">
+               <number>59</number>
+              </property>
+              <property name="value">
+               <number>59</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="3" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QLabel" name="label_41">
+              <property name="text">
+               <string>الثلاثاء   </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_10">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_52">
+              <property name="text">
+               <string>عدد الساعات</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="day_h_4">
+              <property name="maximum">
+               <number>23</number>
+              </property>
+              <property name="value">
+               <number>23</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_53">
+              <property name="text">
+               <string>عدد الدقائق</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="day_m_4">
+              <property name="maximum">
+               <number>59</number>
+              </property>
+              <property name="value">
+               <number>59</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="4" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <widget class="QLabel" name="label_54">
+              <property name="text">
+               <string>الأربعاء   </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_11">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_55">
+              <property name="text">
+               <string>عدد الساعات</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="day_h_5">
+              <property name="maximum">
+               <number>23</number>
+              </property>
+              <property name="value">
+               <number>23</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_56">
+              <property name="text">
+               <string>عدد الدقائق</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="day_m_5">
+              <property name="maximum">
+               <number>59</number>
+              </property>
+              <property name="value">
+               <number>59</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="5" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <item>
+             <widget class="QLabel" name="label_57">
+              <property name="text">
+               <string>الخميس</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_12">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_58">
+              <property name="text">
+               <string>عدد الساعات</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="day_h_6">
+              <property name="maximum">
+               <number>23</number>
+              </property>
+              <property name="value">
+               <number>23</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_59">
+              <property name="text">
+               <string>عدد الدقائق</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="day_m_6">
+              <property name="maximum">
+               <number>59</number>
+              </property>
+              <property name="value">
+               <number>59</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="6" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <item>
+             <widget class="QLabel" name="label_60">
+              <property name="text">
+               <string>الجمعة  </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_13">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_61">
+              <property name="text">
+               <string>عدد الساعات</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="day_h_7">
+              <property name="maximum">
+               <number>23</number>
+              </property>
+              <property name="value">
+               <number>23</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_62">
+              <property name="text">
+               <string>عدد الدقائق</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="day_m_7">
+              <property name="maximum">
+               <number>59</number>
+              </property>
+              <property name="value">
+               <number>59</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_15">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>180</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="CoEIAHajeb.qrc"/>
+ </resources>
+ <connections/>
+</ui>

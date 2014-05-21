@@ -1,0 +1,147 @@
+QString getCurrentUserName() {
+    TCHAR buffer[100];
+    DWORD buffer_size = 100;
+
+    GetUserName(buffer,&buffer_size);
+
+    return QString::fromWCharArray(buffer);
+}
+
+
+#####################################
+
+QStringList getAllUserName() {
+    QStringList allLoggedUser;
+
+    LPWKSTA_USER_INFO_0 pBuf = NULL;
+    LPWKSTA_USER_INFO_0 pTmpBuf;
+    DWORD dwLevel = 0;
+    DWORD dwPrefMaxLen = MAX_PREFERRED_LENGTH;
+    DWORD dwEntriesRead = 0;
+    DWORD dwTotalEntries = 0;
+    DWORD dwResumeHandle = 0;
+    DWORD i;
+    DWORD dwTotalCount = 0;
+    NET_API_STATUS nStatus;
+    LPWSTR pszServerName = NULL;
+
+   pszServerName = NULL;
+
+   //
+   // Call the NetWkstaUserEnum function, specifying level 0.
+   //
+       do // begin do
+       {
+          nStatus = NetWkstaUserEnum( pszServerName,
+                                      dwLevel,
+                                      (LPBYTE*)&pBuf,
+                                      dwPrefMaxLen,
+                                      &dwEntriesRead,
+                                      &dwTotalEntries,
+                                      &dwResumeHandle);
+          //
+          // If the call succeeds,
+          //
+          if ((nStatus == NERR_Success) || (nStatus == ERROR_MORE_DATA))
+          {
+             if ((pTmpBuf = pBuf) != NULL)
+             {
+                //
+                // Loop through the entries.
+                //
+                for (i = 0; (i < dwEntriesRead); i++)
+                {
+                   assert(pTmpBuf != NULL);
+
+                   if (pTmpBuf == NULL)
+                   {
+                      //
+                      // Only members of the Administrators local group
+                      //  can successfully execute NetWkstaUserEnum
+                      //  locally and on a remote server.
+                      //
+                      fprintf(stderr, "An access violation has occurred\n");
+                      break;
+                   }
+                   //
+                   // Print the user logged on to the workstation.
+                   //
+                   wprintf(L"\t-- %s\n",pTmpBuf->wkui0_username );
+                   allLoggedUser << QString::fromWCharArray(pTmpBuf->wkui0_username);
+
+                   pTmpBuf++;
+                   dwTotalCount++;
+                }
+             }
+          }
+          //
+          // Otherwise, indicate a system error.
+          //
+          else
+             fprintf(stderr, "A system error has occurred: %d\n", nStatus);
+          //
+          // Free the allocated memory.
+          //
+          if (pBuf != NULL)
+          {
+             NetApiBufferFree(pBuf);
+             pBuf = NULL;
+          }
+       }
+       //
+       // Continue to call NetWkstaUserEnum while
+       //  there are more entries.
+       //
+       while (nStatus == ERROR_MORE_DATA); // end do
+       //
+       // Check again for allocated memory.
+       //
+       if (pBuf != NULL)
+          NetApiBufferFree(pBuf);
+       //
+       // Print the final count of workstation users.
+       //
+       fprintf(stderr, "\nTotal of %d entries enumerated\n", dwTotalCount);
+
+       foreach (QString str,allLoggedUser) {
+           qDebug() << str;
+       }
+
+       return allLoggedUser;
+}
+
+####################################
+
+int getLoggedUserNameId(QStringList list) {
+    QList<QPair<int,QString> > pairs;
+    QSqlQuery query;
+    query.prepare("SELECT userId,name FROM UsersTable");
+    query.exec();
+    while (query.next()) {
+        int userId  = query.value(0).toInt();
+        QString name = query.value(1).toString();
+        QPair<int,QString> p;
+        p.first = userId;
+        p.second = name;
+        pairs << p;
+    }
+
+    QPair<int,QString> pair;
+    foreach (pair,pairs) {
+        foreach (QString name,list) {
+           if (pair.second == name)
+               return pair.first;
+        }
+    }
+
+    return -1 ; // ERROR
+}
+
+############################################
+
+        //QString userName = getCurrentUserName();
+        //qDebug() << "Windows api userName: " << userName;
+
+        //int userId = getLoggedUserNameId(getAllUserName());
+        //int userId = getCurrentUserId(getCurrentUserName());
+

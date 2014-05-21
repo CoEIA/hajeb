@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/hajebremovericon.ico</file>
+        <file>images/ok.png</file>
+        <file>images/cancel.png</file>
+        <file>images/hajebremovericon32.ico</file>
+        <file>images/Utilities.png</file>
+    </qresource>
+</RCC>

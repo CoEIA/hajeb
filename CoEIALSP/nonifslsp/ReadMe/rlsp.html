@@ -1,0 +1,125 @@
+<p><font face="Arial, Helvetica, sans-serif"><br><h3>Why use Komodia’s advanced RegisterLSP?</h3>
+Every LSP developer uses the default Microsoft RegsiterLSP, which is very good for testing environments. However, when starting to use it in a production environment, 50% of all LSP installations fail due to various factors with which the default installer is not built to deal or deals poorly:<br><br><lu>
+<li>Default base layers IDs are not constant across computers; installation with ID differs from that of the development computer</li>
+<li>Existing LSPs require a different installation strategy, yet the default installer offers only one strategy, which mostly fails and damages the network stack</li>
+<li>The default installer can uninstall an LSP based on its ID, which is determined after the installation, so the LSP programmer has to actively search for this number, which is not directly supported, or to uninstall all LSPs. If the computer in question has more then one LSP, this is a bad practice and should be avoided</li>
+<li>Every LSP update requires a reboot</li></lu></p>
+
+<p><font face="Arial, Helvetica, sans-serif"><h3>Works on 98/98SE/ME/2000/NT/XP/Vista/2003</h3>
+The advanced LSP detects the UAC state in Vista, and if the installer isn’t running in a UAC elevated mode, it prompts and stops the installation.</p>
+
+<p><font face="Arial, Helvetica, sans-serif"><br><h3>Four possible installation strategies</h3><lu>
+<li>Install after a specific existing LSP</li>
+<li>Install before a specific existing LSP</li>
+<li>Bypass all LSPs and install directly over base provider</li>
+<li>Autopilot (Elaborated later)</li>
+</lu>
+</p>
+
+<p><font face="Arial, Helvetica, sans-serif"><br><h3>Installs over layers using the layers names or IDs</h3>
+Installing a new LSP is always over existing base providers or existing LSPs, and the installer can be instructed to use either the existing LSP or base provider Layer ID or the explicit name.
+</p>
+
+<p><font face="Arial, Helvetica, sans-serif"><br><h3>Can be instructed to install after or before a specific existing LSP</h3>
+LSPs aren’t made equal: some can require that when installting another LSP it will be layered after them, some require that it will be layered before them and some must be bypassed due to bad programming, all of which can easily be done by the installer.
+</p>
+
+<p><font face="Arial, Helvetica, sans-serif"><br><h3>Comes in DLL, EXE and COM form</h3>
+The programmer can choose which form to use, or even use all of them, according to his specific requirements.</p>
+
+<p><font face="Arial, Helvetica, sans-serif"><br><h3>Updates the LSP without requiring a reboot</h3>
+One of the biggest annoyances for a user is the requirement to reboot the computer. The advanced installer has the ability to update an existing LSP installation without requiring a reboot.
+</p>
+
+<p><font face="Arial, Helvetica, sans-serif"><br><h3>Can uninstall the LSP using its name or ID</h3>
+Uninstalling an LSP can be done using its name or ID, and the installer supports both options.
+</p>
+
+<p><font face="Arial, Helvetica, sans-serif"><br><h3>Ability to preprogram</h3>
+When installing over some LSPs the installer must be programmed in advance due to poor programming for some existing LSPs on the market today. the installer has a scenario file which can be preprogrammed with specific LSP names, and each LSP can have a customized installation. </p>
+
+<p><font face="Arial, Helvetica, sans-serif"><br><h3>Autopilot that chooses the best method for installing the LSP</h3>
+The advanced installer is both a complex and easy-to-use tool. It gives advanced users great ability to modify and work with the LSP install routine. However, most users want a method that combines advanced functionality with ease of use, which is why we invented the autopilot: with a single instruction, the installer analyzes the LSP stack before installation, and automatically decides on the best course of action.
+</p>
+
+<p><font face="Arial, Helvetica, sans-serif"><br><h3>Detailed log to help analyze problems</h3>
+The installer keeps a detailed log of every installation, which helps troubleshooting LSP problems at remote installation sites.
+</p>
+
+<p><font face="Arial, Helvetica, sans-serif"><br><h3>Detailed manual</h3>
+We’ve taken the guesswork out of the advanced installer with a manual that details all of its options.</p>
+
+<p><font face="Arial, Helvetica, sans-serif"><br><h3>Default installer Vs. Komodia’s advanced LSP installer 
+– a comparison
+</h3>
+<table border=1>
+<tr>
+<td></td>
+<td>Default installer</td>
+<td>Komodia’s advanced LSP installer</td>
+</tr>
+<tr>
+<td>Installation strategies</td>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Install over specific layers</td>
+<td>Using ID only</td>
+<td>Using ID or Name</td>
+</tr>
+<tr>
+<td>Uninstall LSP</td>
+<td>Using ID only</td>
+<td>Using ID or Name</td>
+</tr>
+<tr>
+<td>OS</td>
+<td>2000/XP/Vista/2003</td>
+<td>98/98SE/ME/2000/XP/Vista/2003</td>
+</tr>
+<tr>
+<td>UAC detection</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Install over existing LSP</td>
+<td>Only with manual user intervention</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Install before existing LSP</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Package form</td>
+<td>EXE only</td>
+<td>EXE,DLL and/or COM</td>
+</tr>
+<tr>
+<td>Update LSP without requiring a reboot</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Can be preprogramed</td>
+<td>No</td>
+<td>Yes</td>
+<tr>
+<td>Autopilot</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Detailed log</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+</tr>
+</table>
+</p>
+<p>
+<a href="http://www.komodia.com/rlsp_manual.pdf" target="_new">Download</a> the free advanced installer manual.<br>
+<a href="/index.php?page=newcontact.html">Contact</a> us to receive your 14 days free trial.</p>

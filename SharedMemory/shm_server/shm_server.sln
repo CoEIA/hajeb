@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "shm_server", "shm_server\shm_server.vcxproj", "{61E59306-2B84-4F7D-AF69-DDB63CB78E57}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61E59306-2B84-4F7D-AF69-DDB63CB78E57}.Debug|Win32.ActiveCfg = Release|Win32
+		{61E59306-2B84-4F7D-AF69-DDB63CB78E57}.Debug|Win32.Build.0 = Release|Win32
+		{61E59306-2B84-4F7D-AF69-DDB63CB78E57}.Release|Win32.ActiveCfg = Release|Win32
+		{61E59306-2B84-4F7D-AF69-DDB63CB78E57}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

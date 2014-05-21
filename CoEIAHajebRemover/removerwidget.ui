@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RemoverWidget</class>
+ <widget class="QWidget" name="RemoverWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>476</width>
+    <height>126</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>حذف خدمات واعدادات حاجب</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="CoEIAHajebRemover.qrc">
+    <normaloff>:/images/hajebremovericon.ico</normaloff>:/images/hajebremovericon.ico</iconset>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QGroupBox , #RemoverWidget{
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 #3F3F3F, stop: 0.5 #1F1F1F,stop: 0.6 #2F2F2F, stop:1 #3F3F3F);
+    color: white;
+    padding-top: 10px;
+	padding-bottom: 5px;
+    border: 2px solid #6c6c6c;
+    font: bold;
+    border-radius: 5px;
+}
+
+QToolButton {
+    background-color: #8f8f91;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-style: solid;
+    border-color: black;
+    font-weight: bold;
+    text-align: center;
+    width: 32;
+    height: 32;
+}
+
+QLabel {
+    font-weight: bold;
+	color: gray;
+}
+
+
+#operationLabel {
+    font-weight: bold;
+	color: yellow;
+}
+
+#hourLabel {
+    font-weight: bold;
+	color: white;
+}
+
+#progressBar {
+	color: white;
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>حذف خدمات وإعدادت حاجب</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0" colspan="3">
+       <widget class="QProgressBar" name="progressBar">
+        <property name="value">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="3">
+       <widget class="QLabel" name="operationLabel">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>247</width>
+          <height>15</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="removeButton">
+        <property name="text">
+         <string>حذف الخدمات</string>
+        </property>
+        <property name="icon">
+         <iconset resource="CoEIAHajebRemover.qrc">
+          <normaloff>:/images/Utilities.png</normaloff>:/images/Utilities.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QPushButton" name="cancelButton">
+        <property name="text">
+         <string>الغاء العملية</string>
+        </property>
+        <property name="icon">
+         <iconset resource="CoEIAHajebRemover.qrc">
+          <normaloff>:/images/cancel.png</normaloff>:/images/cancel.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="CoEIAHajebRemover.qrc"/>
+ </resources>
+ <connections/>
+</ui>

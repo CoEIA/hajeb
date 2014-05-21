@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LogsWidget</class>
+ <widget class="QWidget" name="LogsWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>610</width>
+    <height>566</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox_1">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title">
+      <string>خيارات</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>اسم المستخدم</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="userNameComboBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <spacer name="horizontalSpacer_16">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>30</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="updateLogButton">
+        <property name="text">
+         <string>تحديث السجل</string>
+        </property>
+        <property name="icon">
+         <iconset resource="CoEIAHajeb.qrc">
+          <normaloff>:/images/refresh.png</normaloff>:/images/refresh.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QPushButton" name="clearLogButton">
+        <property name="text">
+         <string>حذف السجل</string>
+        </property>
+        <property name="icon">
+         <iconset resource="CoEIAHajeb.qrc">
+          <normaloff>:/images/cancel.png</normaloff>:/images/cancel.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QGroupBox" name="logsGroupBox">
+     <property name="title">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_5">
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="currentIndex">
+         <number>3</number>
+        </property>
+        <widget class="QWidget" name="tab">
+         <attribute name="icon">
+          <iconset resource="CoEIAHajeb.qrc">
+           <normaloff>:/images/programlog.png</normaloff>:/images/programlog.png</iconset>
+         </attribute>
+         <attribute name="title">
+          <string>سجل حظر البرامج</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="0">
+           <widget class="QTableView" name="programLogTableView"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="icon">
+          <iconset resource="CoEIAHajeb.qrc">
+           <normaloff>:/images/blockweblog.png</normaloff>:/images/blockweblog.png</iconset>
+         </attribute>
+         <attribute name="title">
+          <string>سجل حظر المواقع</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="0" column="0">
+           <widget class="QTableView" name="websiteLogTableView"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_3">
+         <attribute name="icon">
+          <iconset resource="CoEIAHajeb.qrc">
+           <normaloff>:/images/weblog.png</normaloff>:/images/weblog.png</iconset>
+         </attribute>
+         <attribute name="title">
+          <string>سجل تصفح المواقع</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QTableView" name="browseWebLogTableView"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_4">
+         <attribute name="icon">
+          <iconset resource="CoEIAHajeb.qrc">
+           <normaloff>:/images/keylog.png</normaloff>:/images/keylog.png</iconset>
+         </attribute>
+         <attribute name="title">
+          <string>سجل لوحة المفاتيح</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_7">
+          <item row="0" column="0">
+           <widget class="QTableView" name="keyloggerLogTableView"/>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="CoEIAHajeb.qrc"/>
+ </resources>
+ <connections/>
+</ui>
