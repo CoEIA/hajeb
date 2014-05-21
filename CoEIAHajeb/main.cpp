@@ -1,10 +1,25 @@
 /*
+* Copyright (C) 2014 - Center of Excellence in Information Assurance
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 ** Unfortunately the code is bad (written without Object-oriented design) and it is not refactored due to the time limitation ,
 ** you will find a lot of duplicated code , legacy un-tested code.
 **
 ** This project is start as proof-of-concept and to find a solution for HTTP blocking.
 **
-** Ahmed Isam <suda.nix@hotmail.com>
+**
 */
 
 #include <QtGui>
